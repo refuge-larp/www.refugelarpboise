@@ -1,0 +1,175 @@
+@charset "utf-8";
+:root {
+	--emeraldgreen: #2ca24e;
+	--forestgreen: #18572b;
+	--discordgray: #2c2f33;
+	--gray: #d8d8d8;
+	--background: #F4F4F4;
+	--white: #FFFFFF;
+	--black: #000000;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-style: normal;
+    font-weight: 300;
+    margin: 0;
+    line-height: 1.5;
+	letter-spacing:0.5px;
+	background-color: var(--background);
+}
+.site-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap:wrap;
+	width:100%;
+	box-sizing:border-box;
+	background: linear-gradient(to bottom, var(--gray), var(--discordgray) 88%);
+	padding:25px;
+}
+.site-header img {
+	width: 100%;
+	max-width: 532px;
+	min-width: 100px;
+}
+.site-nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	flex-grow: 2;
+	padding:5px;
+	text-align: center;
+}
+.navlink, .navdrop {
+	margin: 0 2px;
+	font-weight: bold;
+	font-size: 16px;
+	letter-spacing: 1px;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition-duration: 0.3s;
+	padding:2px 3px 0; 
+	color: var(--emeraldgreen);
+	border-bottom: 1px solid var(--emeraldgreen);
+	position:relative; 
+}
+.navdrop {
+	padding:0 3px 4px;
+}
+.navlink:hover, .navdrop:hover {
+	color: var(--white);
+	border-bottom: 1px solid var(--white);
+	text-decoration: none;
+}
+.site-footer {
+	display:flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap:wrap;
+	width: 100%;
+	box-sizing:border-box;
+	padding:25px;
+	background: var(--forestgreen);
+}
+.site-footer div {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap:wrap;
+	width:50%;
+	font:14px "helvetica neue", arial, helvetica, sans-serif;
+	color: var(--white);
+}
+.footlink, .footlink:hover {
+	margin:0 3px;
+	font: bold 14px "helvetica neue", arial, helvetica, sans-serif;
+	color: var(--white);
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.site-footer div span {
+	width:100%;
+	text-align:right;
+}
+#slide1, #slide2, #slide3 {
+	width: 100%;
+	min-width:400px;
+	height: 400px;
+	object-fit:cover;
+}
+.carousel-caption h5 {
+	font-weight:bold;
+	text-shadow: 
+		2px 0px 0px var(--forestgreen),
+		0px 2px 0px var(--forestgreen),
+		0px -2px 0px var(--forestgreen),
+		-2px 0px 0px var(--forestgreen),
+		2px 2px 0px var(--forestgreen),
+		2px -2px 0px var(--forestgreen),
+		-2px 2px 0px var(--forestgreen),
+		-2px -2px 0px var(--forestgreen)
+		;
+}
+.maincontent {
+	width:50%;
+	min-width:300px;
+	margin:0 auto;
+}
+.maincontent h1 {
+	text-align:center;
+	font: 900 48px "helvetica neue", arial, sans-serif;
+	color: var(--forestgreen)
+}
+.maincontent p {
+	text-align: justify;
+	text-align-last: center;
+	font-size:16px;
+	color:var(--black);
+}
+.cardholder {
+	display:flex;
+	align-items:stretch;
+	justify-content:space-evenly;
+	flex-wrap:wrap;
+}
+#playercard, #regcard {
+	min-width:250px;
+}
+#playercard h5, #regcard h5 {
+	text-align: center;
+	font-weight:900;
+	color: var(--forestgreen);
+}
+#playercard p, #regcard p {
+	font-size:14px;
+}
+#playercard a:link, #playercard a:active, #playercard a:visited, #regcard a:link, #regcard a:active, #regcard a:visited {
+	font-weight: bold;
+	color: var(--emeraldgreen);
+}
+.contactcontent {
+	width:100%;
+}
+#contactlist {
+	margin: 25px auto;
+	min-width: 250px;
+}
+.card-header {
+	text-align:center;
+	font-weight:900;
+	font-size:20px;
+	color:var(--forestgreen);
+}
+#contactcard {
+	text-align: left;
+	font-size: 16px;
+	font-weight: bold;
+	transition-duration: 0.3s;
+}
+#contactcard a:link, #contactcard a:visited, #contactcard a:active {
+	color: var(--emeraldgreen);
+}
+#contactcard a:hover {
+	color: var(--forestgreen);
+}
